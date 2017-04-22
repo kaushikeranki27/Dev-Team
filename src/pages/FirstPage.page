@@ -1,0 +1,209 @@
+<apex:page Showheader="false">
+<apex:form >
+<!--<style>
+    fontstyles1{
+        align="right";
+        color:Black;
+        font-size:12px;
+        font-weight:bold;
+    }
+    
+</style>-->
+ <apex:image value="{!$Resource.Microexcel}" width="320" height="55" style="position:relative;left:200PX;"/>
+         <table align="center" border="0">
+         <!--Partner Lead Registration-->
+          <tr >
+              <td colspan="2" align="CENTER">
+                  <apex:outputtext value="PARTNER LEAD REGISTRATION" style="font-weight:bold;color:red;font-size:20px;"/>
+              </td>
+          </tr>
+          <tr>
+                 <td align="right">
+                     <apex:outputtext value="Lead Type" styleclass="fontstyles1"/>
+                 </td>
+                 <td>
+                     <select>
+                              <option value="Choose Lead type">Choose Lead type</option>
+                              <option value="Hosting">Hosting</option>
+                              <option value="Consulting">Consulting</option>
+                              <option value="hosting and Consulting">Hosting and Consulting</option>
+</select>
+                 </td>  
+             </tr>
+     <!--Partner Information-->     
+             <tr align="CENTER">
+                 <td>
+                     <apex:outputtext value="Partner Information" style="font-weight:bold;color:black;font-size:18px;"/>
+                 </td> 
+             </tr>
+             <br/>
+             <tr>
+                 <td align="Right">
+                     <apex:outputtext value="Partner Contact Name"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr>
+             <tr>
+                 <td align="Right">
+                     <apex:outputtext value="Partner Contact E-mail"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>               
+             </tr>
+             <tr>
+                 <td align="Right">    
+                    <apex:outputtext value="partner contact Phone"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+     <!--Prospect Information-->   
+     <br/> 
+             <tr colspan="2" align="Right">
+                 <td>
+                     <apex:outputtext value="Prospect Information" style="font-weight:bold;color:black;font-size:18px;"/>
+                 </td> 
+             </tr> 
+             
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Company Name"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr>
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="contact Name"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr>    
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="contact Title"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact Address"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact City"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact State"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact Zip"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact E-Mail"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Contact Phone"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Company Type"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Annual Revenue"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Oppurtunity Size"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Estimated Closing-Date"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Number Of Employees"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Number Of Users"/>
+                 </td>
+                 <td>
+                     <apex:inputText />
+                 </td>  
+             </tr> 
+             <tr>
+                 <td align="Right">
+                    <apex:outputtext value="Comments"/>
+                 </td>
+                 <td>
+                     <apex:inputTextarea />
+                 </td>  
+             </tr> 
+                    
+             <tr>
+              <td colspan="2" align="center">
+                  <apex:commandButton value="Submit"/>
+              </td>
+          </tr>
+ 
+         </table>
+     </apex:form>
+</apex:page>
